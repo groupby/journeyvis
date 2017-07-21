@@ -1,20 +1,13 @@
-#include <fstream>
 #include <iostream>
 #include <string>
 #include <sstream>
 using namespace std;
 
-int main(int argc, char *argv[]) {
-  if (argc != 2) {
-    cout << "Expect 2 arguments" << endl;
-    return -1;
-  }
-
-  fstream fs(argv[1]);
+int main() {
   string line;
   string prevId = "";
 
-  while(getline(fs, line)) {
+  while(getline(cin, line)) {
     stringstream ss;
     string s;
     string id;
