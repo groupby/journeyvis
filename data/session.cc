@@ -20,7 +20,7 @@ int main() {
         }
         prevId = s;
       } else if(counter == 3) {
-        cout << s << ' ';
+        cout << s[0] << ' ';
       }
       ++counter;
     }
